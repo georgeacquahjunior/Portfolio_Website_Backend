@@ -1,0 +1,16 @@
+portfolio-backend/
+│
+├── app/                    # Main folder for all application-related code
+│   ├── __init__.py         # Initializes the Flask app and registers blueprints
+│   ├── models/             # Folder for database models (tables in the database)
+│   │   ├── contact.py      # Contact model (database table for storing contact info)
+│   │   └── project.py      # Project model (database table for storing project info)
+│   ├── routes/             # Folder for route handling (the logic of each API endpoint)
+│   │   ├── contact_routes.py # Handles all API routes for contact form
+│   │   └── project_routes.py # Handles all API routes for projects (CRUD operations)
+│   └── utils/              # Helper functions and utilities
+│       └── db.py           # Contains the SQLAlchemy database initialization
+│
+├── .env                    # Environment variables (e.g., secret keys, database URIs)
+├── run.py                  # Entry point for running the app
+├── requirements.txt        # Python dependencies for the app

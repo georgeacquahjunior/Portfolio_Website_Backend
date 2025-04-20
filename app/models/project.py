@@ -9,3 +9,6 @@ class Project(db.model):
     description = db.Column(db.Text, nullable = False) # Short description of the project
     link = db.Column(db.String(255)) # Optional project link
     created_at = db.Column(db.DateTime, default = datetime.utcnow)
+
+    def __repr__(self):
+        return f'<Project {self.title}>'
